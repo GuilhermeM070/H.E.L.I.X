@@ -45,15 +45,15 @@ python helix.py
 Por enquanto, o script solicita a URL e realiza o download direto com qualidade pré-definida.
 
 🧭 Roadmap
- Modularização por camadas (core, interface, config)
+- Modularização por camadas (core, interface, config)
 
- Suporte a múltiplos formatos (mp3, mp4, webm)
+- Suporte a múltiplos formatos (mp3, mp4, webm)
 
- Sistema de logs e histórico de downloads
+- Sistema de logs e histórico de downloads
 
- Configuração via arquivo externo
+- Configuração via arquivo externo
 
- Interface gráfica com progress bar
+- Interface gráfica com progress bar
 
 🧠 Nome & Filosofia
 H.E.L.I.X. representa a espiral evolutiva da automação:
