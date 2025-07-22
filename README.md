@@ -37,12 +37,16 @@ git clone https://github.com/seu-usuario/helix-downloader.git
 cd helix-downloader
 pip install -r requirements.txt
 ```
+---
+
 ▶️ Uso
 bash
 Copiar
 Editar
 python helix.py
 Por enquanto, o script solicita a URL e realiza o download direto com qualidade pré-definida.
+
+---
 
 🧭 Roadmap
 - Modularização por camadas (core, interface, config)
@@ -55,9 +59,13 @@ Por enquanto, o script solicita a URL e realiza o download direto com qualidade 
 
 - Interface gráfica com progress bar
 
+---
+
 🧠 Nome & Filosofia
 H.E.L.I.X. representa a espiral evolutiva da automação:
 "De um script simples, nasce um motor híbrido, lógico e poderoso."
+
+---
 
 📄 Licença
 MIT License © 2025 Guilherme Matos
