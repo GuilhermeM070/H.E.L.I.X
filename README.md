@@ -1,4 +1,4 @@
-# H.E.L.I.X. — Hybrid Engine for Logical Interface and eXtraction
+# H.E.L.I.X. — Handler Eficiente para Log de Integração e eXtração
 
 > ⚙️ Um sistema modular para download inteligente de mídias com futura interface gráfica e suporte a múltiplas fontes.
 
