@@ -29,7 +29,7 @@ def progress_hook(d):
 def main():
     check_ffmpeg()
 
-    output_path = r"C:\\Users\\Guima\\Videos\\H.E.L.I.X"
+    output_path = r"C:\\Users\\SeuUsuario\\caminho/do/arquivo"
     os.makedirs(output_path, exist_ok=True)
     print("Bem-vindo ao programa de baixar vídeos do YouTube!")
 
