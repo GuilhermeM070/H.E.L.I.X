@@ -1,40 +1,122 @@
+/* RESET (*): remove estilos padrão de todos os elementos para evitar inconsistências entre navegadores. */
+* {
+  margin: 0; /*Remove a margem padrao.*/
+  padding: 0; /* Remove os espaçamentos padrao.*/
+  box-sizing: border-box; /* Faz com que o tamanho de um elemento inclua padding e borda, evitando que o layout quebre inesperadamente.*/
+}
+
+/* Base */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, sans-serif; /*Fonte padrão da página*/
+  background-color: #0f0f0f; /*Cor de fundo escura (estilo GitHub Dark)*/
+  color: #ffffff; /*Cor padrão dos textos*/
+  line-height: 1.6; /*define a altura da linha do texto. Se o font-size for 16px, então line-height: 1.6 resulta em 16px × 1.6 = 25.6px de altura da linha.*/
 }
 
 header {
-  background-color: #222;
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: linear-gradient(to left, rgb(0, 229, 90), rgb(0,229,90)); /* Cores da barra guia*/
+  padding: 12px; /* largura da barra guia*/
+  text-align: center; /* Texto alinhado ao centro*/
+  box-shadow: 0px 20px 40px rgb(0, 229, 90); /* Sombra da guia*/
 }
 
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
+/*Seleciona especificamente o elemento <h1> que está dentro de um <header>.*/
+header h1 {
+  font-size: 2.8rem; /* Tamanho da fonte*/
+  color: #0a0000; /* Cor da fonte*/
+  letter-spacing: 2px; /* Espacamento entre as letras*/
 }
 
+nav {
+  margin-top: 5px; /*Topo da guia*/
+}
+
+/* Seleciona todos os elementos <a> dentro de um <nav>.*/
+nav a { 
+  color: #000000; /**/
+  margin: 0 12px; /**/
+  text-decoration: none; /**/ 
+  font-weight: bold; /**/
+  transition: color 0.4s; /*Animação Suave*/
+}
+
+/*Letras da Guia, quando o mouse passa por cima*/
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Hero Section */
 .hero {
-  padding: 2rem;
-  background-color: #0077cc;
-  color: white;
+  padding: 37px 20px;
   text-align: center;
+  background: url('assets/bg-helix.jpg') no-repeat center center/cover;
+  color: rgb(0, 299, 90); /*Cor do Marca*/
+  text-shadow: 0 0 10px rgb(0, 299, 90); /*Sombra da Marca*/
 }
 
+.hero h2 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+
+/*Configurações do Botão*/
 .cta {
   display: inline-block;
-  margin-top: 1rem;
-  background: white;
-  color: #0077cc;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
+  background-color: #12dc59;
+  color: #0f0f0f;
+  padding: 17px 27px; /*tamanho do botão*/
+  border-top-left-radius: 47px; /*Curvatura esquerda acima do Botão*/
+  border-top-right-radius: 2px; /*Curvatura direita acima do Botão*/
+  border-bottom-right-radius: 47px; /*Curvatura direita abaixo do Botão*/
+  border-bottom-left-radius: 2px; /*Curvatura esquerda abaixo do Botão*/
+  font-weight: bold;
+  text-decoration: none; /*remove qualquer decoração de texto*/
+  transition: all 0.4s ease;
 }
+
+/*Botão - Saiba Mais - Configurações*/
+.cta:hover {
+  background-color: rgb(0, 299, 90); /*Cor do Botão*/
+  color: #0f0f0f; /*Cor do Texto*/
+  box-shadow: 0 0 20px rgb(0, 299, 90); /*Sombra do Botão*/
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: '✓';
+  color: #1ea229;
+  margin-right: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 30px;
+  text-align: center;
+  border-top: 2px solid #1db954;
+}
+
+footer a {
+  color: #00fff7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #1db954;
+}
+
