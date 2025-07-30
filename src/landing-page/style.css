@@ -97,7 +97,7 @@ ul {
 }
 
 ul li::before {
-  content: '✓';
+  content: '✔';
   color: #1ea229;
   margin-right: 8px;
 }
