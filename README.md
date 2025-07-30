@@ -8,13 +8,24 @@
 
 O **H.E.L.I.X.** é um script Python de extração automatizada de vídeos com foco em modularidade, escalabilidade e usabilidade futura via GUI. A base utiliza `yt_dlp` e `ffmpeg`, permitindo baixar mídias com qualidade personalizada, suporte a áudio/vídeo separados e lógica preparada para expansão.
 
+--- 
+
+## Stacks
+🔹 Frontend:
+- HTML5 + CSS3: A landing page foi completamente estilizada com foco em design responsivo e visual limpo. Foram aplicadas boas práticas de semântica, acessibilidade e organização estrutural.
+- JavaScript Vanilla: Em andamento, a integração de scripts para manipulação dinâmica da interface — como validação de links, animações e interações em tempo real.
+
+🔹 Backend:
+- Python + FastAPI: O backend será responsável por orquestrar os downloads via yt_dlp, oferecendo uma API REST robusta, rápida e fácil de escalar.
+- Integração com yt_dlp: Será utilizado para realizar o download e o merge de vídeo e áudio, com suporte a múltiplos formatos e tratamento de erros.
+- Execução assíncrona: A FastAPI permitirá requisições simultâneas com alto desempenho, ideal para processos que envolvem I/O pesado como downloads.
+
 ---
 
 ## 🚀 Funcionalidades
 
 - ✅ Download de vídeos via link direto
 - ✅ Conversão automatizada com `ffmpeg`
-- ✅ Organização de pastas por data e tipo
 - 🚧 Interface gráfica em construção (Tkinter/Qt)
 - 🚧 Configurações via JSON em breve
 
