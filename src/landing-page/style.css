@@ -7,42 +7,45 @@
 
 /* Base */
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif; /*Fonte padrão da página*/
-  background-color: #0f0f0f; /*Cor de fundo escura (estilo GitHub Dark)*/
+  font-family: 'Roboto', Open Sans; /*Fonte padrão da página*/
+  background-color: rgb(0, 0, 0); /*Cor de fundo escura (estilo GitHub Dark)*/
   color: #ffffff; /*Cor padrão dos textos*/
-  line-height: 1.6; /*define a altura da linha do texto. Se o font-size for 16px, então line-height: 1.6 resulta em 16px × 1.6 = 25.6px de altura da linha.*/
+  line-height: 2.0; /*define a altura da linha do texto. Se o font-size for 16px, então line-height: 1.6 resulta em 16px × 1.6 = 25.6px de altura da linha.*/
 }
 
+/* Configurações da Guia*/
 header {
-  background: linear-gradient(to left, rgb(0, 229, 90), rgb(0,229,90)); /* Cores da barra guia*/
-  padding: 12px; /* largura da barra guia*/
+  background: linear-gradient(rgb(30, 28, 28), rgb(0, 0, 0)); /* Cores da barra guia*/
+  padding: 17px; /* largura da barra guia*/
   text-align: center; /* Texto alinhado ao centro*/
-  box-shadow: 0px 20px 40px rgb(0, 229, 90); /* Sombra da guia*/
+  box-shadow: 0px 20px 40px rgb(0, 299, 99); /* Sombra da guia*/
+  animation-duration: all 0.7s ease; /* Animação*/
 }
 
 /*Seleciona especificamente o elemento <h1> que está dentro de um <header>.*/
 header h1 {
   font-size: 2.8rem; /* Tamanho da fonte*/
   color: #0a0000; /* Cor da fonte*/
-  letter-spacing: 2px; /* Espacamento entre as letras*/
+  letter-spacing: 17px; /* Espacamento entre as letras*/
 }
 
 nav {
-  margin-top: 5px; /*Topo da guia*/
+  margin-top: 10px; /*Topo da guia*/
 }
 
-/* Seleciona todos os elementos <a> dentro de um <nav>.*/
+/* Palavras da Guia*/
 nav a { 
-  color: #000000; /**/
-  margin: 0 12px; /**/
-  text-decoration: none; /**/ 
-  font-weight: bold; /**/
+  color: #ffffff; /* Cor da letra guia*/
+  margin: 50px 50px; /*Espaçaento entre as palavras da guia*/
+  text-decoration: none; /* */ 
+  font-weight: bold; /*Negrito - Bold, Normal - Normal, Itálico - Italic, Sublinhado - Underline, Cursivo - Oblique, Sombra - Shadow*/
   transition: color 0.4s; /*Animação Suave*/
 }
 
 /*Letras da Guia, quando o mouse passa por cima*/
 nav a:hover {
-  color: #ffffff;
+  color: rgb(0, 299, 90);
+  text-shadow: 0 0 10px rgb(0, 299, 90);;
 }
 
 /* Hero Section */
@@ -54,39 +57,49 @@ nav a:hover {
   text-shadow: 0 0 10px rgb(0, 299, 90); /*Sombra da Marca*/
 }
 
+/*Paragrafo h2*/
 .hero h2 {
+  margin-top: 70px;
+  margin-bottom: 10px;
   font-size: 3.5rem;
 }
 
+/*Paragrafo texto*/
 .hero p {
-  font-size: 1.4rem;
-  margin: 15px 0;
+  margin-top: 17px; /* Espacamento entre o h2 e o p*/
+  font-size: 1.7rem; /* Tamanho da fonte abaixo do h2*/
+  margin: 30px 0;
 }
 
-/*Configurações do Botão*/
+/*Configurações do Botão - Aparencia*/
 .cta {
-  display: inline-block;
-  background-color: #12dc59;
-  color: #0f0f0f;
-  padding: 17px 27px; /*tamanho do botão*/
-  border-top-left-radius: 47px; /*Curvatura esquerda acima do Botão*/
+  display: inline-block; /* Configurações do Botão - inline-block - */
+  /*background-color: #12dc59;*/
+  color: rgb(0, 299, 90);
+  padding: 17px 37px; /*tamanho do botão*/
+  border-top-left-radius: 57px; /*Curvatura esquerda acima do Botão*/
   border-top-right-radius: 2px; /*Curvatura direita acima do Botão*/
-  border-bottom-right-radius: 47px; /*Curvatura direita abaixo do Botão*/
+  border-bottom-right-radius: 57px; /*Curvatura direita abaixo do Botão*/
   border-bottom-left-radius: 2px; /*Curvatura esquerda abaixo do Botão*/
   font-weight: bold;
   text-decoration: none; /*remove qualquer decoração de texto*/
-  transition: all 0.4s ease;
+  transition: all 0.7s ease; /* Animação*/
+  transform: scale(1.27); /* Tamanho do Botão*/
+  box-shadow: #12dc59; /* Sombra do Botão*/
 }
 
 /*Botão - Saiba Mais - Configurações*/
 .cta:hover {
+  font-size: 17px; /*Tamanho da fonte*/
   background-color: rgb(0, 299, 90); /*Cor do Botão*/
   color: #0f0f0f; /*Cor do Texto*/
-  box-shadow: 0 0 20px rgb(0, 299, 90); /*Sombra do Botão*/
+  box-shadow: 0 0 37px rgb(0, 299, 90); /*Sombra do Botão*/
 }
 
-/* Sections */
+/* Texto do site */
 section {
+  font-size: 20px; /*Tamanho da fonte*/
+  line-height: 37px; /*Espacamento entre as linhas*/
   padding: 60px 20px;
   max-width: 800px;
   margin: auto;
@@ -98,25 +111,34 @@ ul {
 
 ul li::before {
   content: '✔';
-  color: #1ea229;
-  margin-right: 8px;
+  color: rgb(0, 255, 34);
+  margin-right: 20px; /*Recuo do espaçamento do content*/
 }
 
 /* Footer */
 footer {
   background-color: #1a1a1a;
-  padding: 30px;
+  padding: 27px;
   text-align: center;
-  border-top: 2px solid #1db954;
+  border-top: 4px solid #1db954;
 }
 
 footer a {
-  color: #00fff7;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-decoration: none;
+  line-height: 17px;
+  margin-top: 7px;
+  padding: 7px;
 }
 
 footer a:hover {
-  color: #1db954;
+  color: rgb(0, 299, 90);
 }
+
+/*Precisamos arrumar o icone do github*/
+.fa-github {
+    color: rgb(255‚ 81‚ 0);
+    font-size: 150px;
+    }
 
